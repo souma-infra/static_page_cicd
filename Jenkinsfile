@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
     stages {
@@ -13,4 +12,5 @@ pipeline {
         	sh 'grep "Hello from my own CI/CD pipeline!" index.html'
     	    }
 	}
+}
 }
