@@ -12,5 +12,10 @@ pipeline {
         	sh 'grep "Hello from my own CI/CD pipeline!" index.html'
     	    }
 	}
+	stage('Deploy') {
+	    steps {
+		sh 'cp index.html /var/www/soumaditya-static/index.html'	 
+	    }
+	}
 }
 }
